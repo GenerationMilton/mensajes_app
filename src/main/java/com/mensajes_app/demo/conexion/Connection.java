@@ -1,14 +1,13 @@
 package com.mensajes_app.demo.conexion;
 
-import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Conexion {
+public class Connection {
 
-    public Connection get_connection() throws SQLException {
+    public java.sql.Connection get_connection() throws SQLException {
 
-    Connection connection=null;
+    java.sql.Connection connection=null;
     connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes","root","Gomito1831");
 
     if(connection != null){
