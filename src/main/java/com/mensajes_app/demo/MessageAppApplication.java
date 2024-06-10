@@ -19,8 +19,8 @@ public class MessageAppApplication {
 			System.out.println("App message");
 			System.out.println("1. Create message");
 			System.out.println("2. List menssage");
-			System.out.println("3. Edit message");
-			System.out.println("4. Delete message");
+			System.out.println("3. Delete message");
+			System.out.println("4. Edit message");
 			System.out.println("5. Exit");
 			//leemos la opcion del usuario
 			option=sc.nextInt();
@@ -33,10 +33,10 @@ public class MessageAppApplication {
 					MessageService.listMessage();
 					break;
 				case 3:
-					MessageService.updateMessage();
+					MessageService.deleteMessage();
 					break;
 				case 4:
-					MessageService.deleteMessage();
+					MessageService.updateMessage();
 					break;
 				default:
 					break;
